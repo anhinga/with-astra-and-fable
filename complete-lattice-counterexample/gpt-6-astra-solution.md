@@ -20,47 +20,54 @@ Your *Logic of Fixed Points and Scott Topology*, §4.3.1, explicitly records the
 
 The key observation is that **finite witnesses produce countable sets of mutually supporting tokens**, and these produce fixed points with a particular compactness property.
 
-Call a nonempty family $D$ *countably directed* if every countable subset of \(D\) has an upper bound in \(D\). Call \(k\) **\(\aleph_1\)-compact** if
+Call a nonempty family $D$ *countably directed* if every countable subset of $D$ has an upper bound in $D$. Call $k$ **$\aleph_1$-compact** if
 
 $$
 k\leq\bigvee D\quad\Longrightarrow\quad
 k\leq d\text{ for some }d\in D
 $$
 
-for every countably directed \(D\).
+for every countably directed $D$.
 
 The proposed necessary condition is:
-\[
+
+$$
 \boxed{
 L\cong\operatorname{Fix}(f),\quad
 f:\mathcal P(S)\to\mathcal P(S)\text{ Scott continuous}
 \quad\Longrightarrow\quad
 x=\bigvee\{k\leq x:k\text{ is }\aleph_1\text{-compact}\}
 }
-\]
-for every \(x\in L\). There is **no cardinality restriction on \(S\)** in this implication.
+$$
+
+for every $x\in L$. There is **no cardinality restriction on $S$** in this implication.
 
 Here is the proof.
 
-Put \(L=\operatorname{Fix}(f)\), ordered by inclusion. First, directed joins in \(L\) are unions:
-\[
+Put $L=\operatorname{Fix}(f)$, ordered by inclusion. First, directed joins in $L$ are unions:
+
+$$
 f\left(\bigcup D\right)
 =\bigcup_{d\in D}f(d)
 =\bigcup D.
-\]
+$$
 
-Now fix \(A\in L\) and a token \(a\in A\). Scott continuity gives
-\[
+Now fix $A\in L$ and a token $a\in A$. Scott continuity gives
+
+$$
 f(A)=\bigcup_{u\subseteq_{\mathrm{fin}}A}f(u).
-\]
-Because \(A=f(A)\), for each \(b\in A\) we can choose a finite witness \(u_b\subseteq A\) such that \(b\in f(u_b)\).
+$$
 
-Starting with \(B_0=\{a\}\), define
-\[
+Because $A=f(A)$, for each $b\in A$ we can choose a finite witness $u_b\subseteq A$ such that $b\in f(u_b)$.
+
+Starting with $B_0=\{a\}$, define
+
+$$
 B_{n+1}=B_n\cup\bigcup_{b\in B_n}u_b,
 \qquad
 B=\bigcup_{n<\omega}B_n.
-\]
+$$
+
 Each \(B_n\) is finite, so \(B\) is countable. Every token in \(B\) has its chosen witness inside \(B\); consequently,
 \[
 a\in B\subseteq f(B),\qquad B\subseteq A.
