@@ -1,18 +1,4 @@
----
-writer_app: llm-aggregator
-writer_version: 0.0.0
-schema_version: 2
-exported_at: 2026-09-13T21:48:55.363Z
-export_type: qa
----
-
-title: Hi, I am occasionally revisiting the following question which seems…
-source: chatgpt
-url: https://chatgpt.com/share/6a9e2cae-7994-83e9-99cd-71699fa18db7
-tags: chatgpt, gpt-6-astra-wm
-version: 0
-original_id: 20260906_223207_969
-original_timestamp: 2026-09-07T02:32:07.969Z
+https://chatgpt.com/share/6a9e2cae-7994-83e9-99cd-71699fa18db7
 
 ## Question
 
@@ -34,11 +20,11 @@ Your *Logic of Fixed Points and Scott Topology*, §4.3.1, explicitly records the
 
 The key observation is that **finite witnesses produce countable sets of mutually supporting tokens**, and these produce fixed points with a particular compactness property.
 
-Call a nonempty family \(D\) *countably directed* if every countable subset of \(D\) has an upper bound in \(D\). Call \(k\) **\(\aleph_1\)-compact** if
-\[
+Call a nonempty family $D$ *countably directed* if every countable subset of \(D\) has an upper bound in \(D\). Call \(k\) **\(\aleph_1\)-compact** if
+$$
 k\leq\bigvee D\quad\Longrightarrow\quad
 k\leq d\text{ for some }d\in D
-\]
+$$
 for every countably directed \(D\).
 
 The proposed necessary condition is:
