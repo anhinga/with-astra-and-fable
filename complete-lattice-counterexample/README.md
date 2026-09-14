@@ -22,7 +22,7 @@ The counterexample itself is partially inspired by a recent paper _"The complete
 [https://arxiv.org/abs/2608.00408](https://arxiv.org/abs/2608.00408), and the Astra's interest in this paper comes from my earlier discussions with
 other models.
 
-Consider a construction from descriptive set theory, namely a Baire space of weight $\aleph_1$ (all that is new to me), $(\omega_1)^{\mathbb N}$:
+Consider a construction from descriptive set theory, namely the Baire space of weight $\aleph_1$ (all that is new to me), $(\omega_1)^{\mathbb N}$:
 [https://en.wikipedia.org/wiki/Baire_space_(set_theory)](https://en.wikipedia.org/wiki/Baire_space_(set_theory)) (section "Weight").
 
 Consider the complete lattice (actually a complete Boolean algebra) of the regular open sets of $(\omega_1)^{\mathbb N}$.
@@ -32,4 +32,4 @@ can be obtained as the exact upper bound of the set of $\aleph_1$-compact elemen
 
 The combination of this theorem and the lemma above proves that the complete lattice of the regular open sets of $(\omega_1)^{\mathbb N}$
 is a counterexample to the conjecture that every complete lattice is isomorphic to some $\mathrm{Fix}(f)$, where
-$f:\mathcal P(S)\to\mathcal P(S)$ is Scott continuous and $\mathcal P(S)$ is a powerset of some set $S$.
+$f:\mathcal P(S)\to\mathcal P(S)$ is Scott continuous and $\mathcal P(S)$ is the powerset of some set $S$.
