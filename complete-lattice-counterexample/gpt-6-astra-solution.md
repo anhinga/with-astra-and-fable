@@ -168,7 +168,7 @@ This contradicts the necessary generation property. **The argument therefore yie
 
 $$
 \boxed{
-\operatorname{RO}\bigl((\omega_1)^{\mathbb N}\bigr)
+\mathrm{RO}\bigl((\omega_1)^{\mathbb N}\bigr)
 \not\cong\mathrm{Fix}(f)
 }
 $$
