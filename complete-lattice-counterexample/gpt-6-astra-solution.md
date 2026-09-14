@@ -33,7 +33,7 @@ The proposed necessary condition is:
 
 $$
 \boxed{
-L\cong\operatorname{Fix}(f),\quad
+L\cong\mathrm{Fix}(f),\quad
 f:\mathcal P(S)\to\mathcal P(S)\text{ Scott continuous}
 \quad\Longrightarrow\quad
 x=\bigvee\{k\leq x:k\text{ is }\aleph_1\text{-compact}\}
@@ -68,89 +68,111 @@ B_{n+1}=B_n\cup\bigcup_{b\in B_n}u_b,
 B=\bigcup_{n<\omega}B_n.
 $$
 
-Each \(B_n\) is finite, so \(B\) is countable. Every token in \(B\) has its chosen witness inside \(B\); consequently,
-\[
+Each $B_n$ is finite, so $B$ is countable. Every token in $B$ has its chosen witness inside $B$; consequently,
+
+$$
 a\in B\subseteq f(B),\qquad B\subseteq A.
-\]
+$$
 
 We can therefore iterate upwards:
-\[
+
+$$
 K=\bigcup_{n<\omega}f^n(B).
-\]
-Scott continuity implies \(f(K)=K\). Moreover, \(K\subseteq A\), and **\(K\) is the least fixed point containing \(B\)**.
+$$
 
-To see that \(K\) is \(\aleph_1\)-compact, suppose \(D\subseteq L\) is countably directed and
-\[
+Scott continuity implies $f(K)=K$. Moreover, $K\subseteq A$, and **$K$ is the least fixed point containing $B$**.
+
+To see that $K$ is $\aleph_1$-compact, suppose $D\subseteq L$ is countably directed and
+
+$$
 K\subseteq\bigvee_LD=\bigcup D.
-\]
-The countable set \(B\) is contained in the union of countably many members of \(D\). Countable directedness supplies one \(d\in D\) containing all of \(B\). Since \(d\) is fixed and \(K\) is the least fixed point containing \(B\),
-\[
+$$
+
+The countable set $B$ is contained in the union of countably many members of $D$. Countable directedness supplies one $d\in D$ containing all of $B$. Since $d$ is fixed and $K$ is the least fixed point containing $B$,
+
+$$
 K\subseteq d.
-\]
+$$
 
-Thus every token of \(A\) belongs to an \(\aleph_1\)-compact fixed point below \(A\), proving the boxed condition.
+Thus every token of $A$ belongs to an $\aleph_1$-compact fixed point below $A$, proving the boxed condition.
 
-Notice that **\(K\) itself need not be countable**. Its compactness comes from its countable generating set \(B\).
+Notice that **$K$ itself need not be countable**. Its compactness comes from its countable generating set $B$.
 
 Now consider the following complete lattice:
-\[
+
+$$
 X=(\omega_1)^{\mathbb N},
 \qquad
 L=\operatorname{RO}(X),
-\]
-where each copy of \(\omega_1\) has the **discrete topology**, and \(X\) has the product topology. Here \(\operatorname{RO}(X)\) denotes the regular open sets:
-\[
+$$
+
+where each copy of $\omega_1$ has the **discrete topology**, and $X$ has the product topology. Here $\operatorname{RO}(X)$ denotes the regular open sets:
+
+$$
 U=\operatorname{int}\overline U.
-\]
+$$
+
 They form a complete Boolean algebra, with joins
-\[
+
+$$
 \bigvee_iU_i
 =\operatorname{int}\overline{\bigcup_iU_i}.
-\]
+$$
+
 These are the standard regular-open operations. [Reference, §2.3](https://arxiv.org/html/2608.00408v1#S2.SS3)
 
-I claim that **this lattice has no nonzero \(\aleph_1\)-compact element**.
+I claim that **this lattice has no nonzero $\aleph_1$-compact element**.
 
-Take any nonempty \(U\in\operatorname{RO}(X)\). It contains a basic clopen cylinder
-\[
+Take any nonempty $U\in\operatorname{RO}(X)$. It contains a basic clopen cylinder
+
+$$
 V=[s]
-\]
-for some finite sequence \(s\) of countable ordinals. Partition that cylinder according to the next coordinate:
-\[
+$$
+
+for some finite sequence $s$ of countable ordinals. Partition that cylinder according to the next coordinate:
+
+$$
 V=\coprod_{\xi<\omega_1}V_\xi,
 \qquad
 V_\xi=[s^\frown\xi].
-\]
-All \(V_\xi\) are nonempty and clopen.
+$$
 
-For each \(\alpha<\omega_1\), put
-\[
+All $V_\xi$ are nonempty and clopen.
+
+For each $\alpha<\omega_1$, put
+
+$$
 U_\alpha=(U\setminus V)\cup\bigcup_{\xi<\alpha}V_\xi.
-\]
+$$
+
 These sets have four properties:
 
-- Each \(U_\alpha\) is regular open: it is \(U\) intersected with a clopen set.
+- Each $U_\alpha$ is regular open: it is $U$ intersected with a clopen set.
 - They form an increasing chain.
-- Each \(U_\alpha\) is strictly smaller than \(U\), since it misses \(V_\alpha\).
-- Their union is \(U\), hence their join in \(\operatorname{RO}(X)\) is \(U\).
+- Each $U_\alpha$ is strictly smaller than $U$, since it misses $V_\alpha$.
+- Their union is $U$, hence their join in $\operatorname{RO}(X)$ is $U$.
 
-Furthermore, this chain is countably directed: every countable collection of ordinals below \(\omega_1\) has an upper bound below \(\omega_1\).
+Furthermore, this chain is countably directed: every countable collection of ordinals below $\omega_1$ has an upper bound below $\omega_1$.
 
 Consequently,
-\[
+
+$$
 U=\bigvee_{\alpha<\omega_1}U_\alpha,
 \qquad
 U\nsubseteq U_\alpha\quad\text{for every }\alpha<\omega_1.
-\]
-Thus \(U\) is not \(\aleph_1\)-compact. Since \(U\neq\varnothing\) was arbitrary, only the bottom element is \(\aleph_1\)-compact.
+$$
+
+Thus $U$ is not $\aleph_1$-compact. Since $U\neq\varnothing$ was arbitrary, only the bottom element is $\aleph_1$-compact.
 
 This contradicts the necessary generation property. **The argument therefore yields**
-\[
+
+$$
 \boxed{
 \operatorname{RO}\bigl((\omega_1)^{\mathbb N}\bigr)
 \not\cong\operatorname{Fix}(f)
 }
-\]
+$$
+
 for any Scott-continuous endomap of any powerset.
 
-The limitation is precise. In a **countable** lattice, every countably directed family already has a greatest element, so every element is automatically \(\aleph_1\)-compact. The same holds when the Scott topology has a countable basis: choose one directed-family witness for each basic neighborhood of the supremum, then bound those countably many witnesses. Thus this proposed counterexample does not settle the countably based problem—or exclude the countable non-sober lattice \(R\) we previously explored.
+The limitation is precise. In a **countable** lattice, every countably directed family already has a greatest element, so every element is automatically $\aleph_1$-compact. The same holds when the Scott topology has a countable basis: choose one directed-family witness for each basic neighborhood of the supremum, then bound those countably many witnesses. Thus this proposed counterexample does not settle the countably based problem—or exclude the countable non-sober lattice $R$ we previously explored.
