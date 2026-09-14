@@ -44,7 +44,7 @@ for every $x\in L$. There is **no cardinality restriction on $S$** in this impli
 
 Here is the proof.
 
-Put $L=\operatorname{Fix}(f)$, ordered by inclusion. First, directed joins in $L$ are unions:
+Put $L=\mathrm{Fix}(f)$, ordered by inclusion. First, directed joins in $L$ are unions:
 
 $$
 f\left(\bigcup D\right)
@@ -103,27 +103,27 @@ Now consider the following complete lattice:
 $$
 X=(\omega_1)^{\mathbb N},
 \qquad
-L=\operatorname{RO}(X),
+L=\mathrm{RO}(X),
 $$
 
-where each copy of $\omega_1$ has the **discrete topology**, and $X$ has the product topology. Here $\operatorname{RO}(X)$ denotes the regular open sets:
+where each copy of $\omega_1$ has the **discrete topology**, and $X$ has the product topology. Here $\mathrm{RO}(X)$ denotes the regular open sets:
 
 $$
-U=\operatorname{int}\overline U.
+U=\mathrm{int}\overline U.
 $$
 
 They form a complete Boolean algebra, with joins
 
 $$
 \bigvee_iU_i
-=\operatorname{int}\overline{\bigcup_iU_i}.
+=\mathrm{int}\overline{\bigcup_iU_i}.
 $$
 
 These are the standard regular-open operations. [Reference, §2.3](https://arxiv.org/html/2608.00408v1#S2.SS3)
 
 I claim that **this lattice has no nonzero $\aleph_1$-compact element**.
 
-Take any nonempty $U\in\operatorname{RO}(X)$. It contains a basic clopen cylinder
+Take any nonempty $U\in\mathrm{RO}(X)$. It contains a basic clopen cylinder
 
 $$
 V=[s]
@@ -150,7 +150,7 @@ These sets have four properties:
 - Each $U_\alpha$ is regular open: it is $U$ intersected with a clopen set.
 - They form an increasing chain.
 - Each $U_\alpha$ is strictly smaller than $U$, since it misses $V_\alpha$.
-- Their union is $U$, hence their join in $\operatorname{RO}(X)$ is $U$.
+- Their union is $U$, hence their join in $\mathrm{RO}(X)$ is $U$.
 
 Furthermore, this chain is countably directed: every countable collection of ordinals below $\omega_1$ has an upper bound below $\omega_1$.
 
@@ -169,7 +169,7 @@ This contradicts the necessary generation property. **The argument therefore yie
 $$
 \boxed{
 \operatorname{RO}\bigl((\omega_1)^{\mathbb N}\bigr)
-\not\cong\operatorname{Fix}(f)
+\not\cong\mathrm{Fix}(f)
 }
 $$
 
