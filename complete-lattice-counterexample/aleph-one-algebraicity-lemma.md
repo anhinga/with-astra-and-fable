@@ -1,12 +1,8 @@
-\documentclass{article}
-
-\begin{document}
-
 Consider a partially ordered set $P$.
 
-Call a nonempty partially ordered set $D \subseteq P$ {\em countably directed} if every countable subset of $D$ has an upper bound in $D$. 
+Call a nonempty partially ordered set $D \subseteq P$ _countably directed_ if every countable subset of $D$ has an upper bound in $D$. 
 
-Call $k \in P$ {\bf $\aleph_1$-compact} if for every countably directed $D \subseteq P$
+Call $k \in P$ **$\aleph_1$-compact** if for every countably directed $D \subseteq P$
 
 $$
 k\leq\bigvee D\quad\Longrightarrow\quad
@@ -14,16 +10,16 @@ k\leq d\mbox{ for some }d\in D .
 $$ 
 
 
-{\bf Lemma.} Consider set $S$ and its powerset $\mathcal P(S)$ partially ordered by $\subseteq$.
+**Lemma.** Consider set $S$ and its powerset $\mathcal P(S)$ partially ordered by $\subseteq$.
 
 Consider a Scott continuous $f:\mathcal P(S)\to\mathcal P(S)$. 
 
-Consider $\mathrm{Fix}(f) = \{x \subseteq S: f(x) = x\}$,
+Consider $\mathrm{Fix}(f) = {x \subseteq S: f(x) = x}$,
 $\mathrm{Fix}(f)$ being partially ordered by $\subseteq$ as well.
 
-Then for every $x\in \mathrm{Fix}(f)$, $x=\bigvee\{k\leq x:k\mbox{ is }\aleph_1\mbox{-compact}\}$.\\
+Then for every $x\in \mathrm{Fix}(f)$, $x=\bigvee\{k\leq x:k\mbox{ is }\aleph_1\mbox{-compact}\}$. 
 
-{\bf Remark:} There is {\bf no cardinality restriction on $S$} in this Lemma.\\
+{\bf Remark:} There is {\bf no cardinality restriction on $S$} in this Lemma. 
 
 {\bf Proof.}
 
