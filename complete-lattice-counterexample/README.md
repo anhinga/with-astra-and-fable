@@ -15,6 +15,18 @@ Establish a **lemma** that all elements of ${Fix}(f),\quad f:\mathcal P(S)\to\ma
 of sets of approximating them $\aleph_1$-compact elements (this is the a variation of the standard notion of algebraicity of a domain,
 obtained when this notion is  pushed towards higher cardinality).
 
+***
+
+detailed proof of the Lemma (and also Lean 4 verification materials): [aleph-one-algebraicity-lemma](aleph-one-algebraicity-lemma)
+
+Literature research on the origins of the notions of _countably directed set_, an $\aleph_1$-_compact element_, and $\aleph_1$-_algebraicity_:
+
+https://chatgpt.com/share/6aa8e73b-5a3c-83ea-97c8-aca8df3e9888
+
+Interestingly enough, the earliest published text might be the one by Bob Flagg: “$\kappa$-continuous lattices and comprehension principles for Frege structures,” _Annals of Pure and Applied Logic_ **36** (1987), 1–16. (new to me, although I am aware of many of his papers)
+
+***
+
 Then build an example of a complete lattice where this " $\aleph_1$-algebraicity" does not hold. This will be a counterexample (note that **the case of
 complete lattices whose Scott topologies have countable bases remains open**, the example which is being build here is larger than that).
 
