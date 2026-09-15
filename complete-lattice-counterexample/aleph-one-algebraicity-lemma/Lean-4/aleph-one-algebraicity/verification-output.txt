@@ -1,0 +1,32 @@
+Observed at lean.math.hhu.de on 2026-09-15.
+Project: Latest Mathlib. Compiler: Lean 4.34.0-rc2.
+Final diagnostics: 8 informational messages, 0 errors, 0 warnings.
+The following text was returned by the editor's visible messages panel,
+followed by the exact-source comparison performed using the editor clipboard.
+
+MathlibDemo.lean:319:0
+No info found.
+All Messages ( 8)
+MathlibDemo.lean:318:0
+"VERIFICATION COMPLETE"
+MathlibDemo.lean:317:0
+'AlephOneAlgebraicity.fixedPoint_eq_union_compacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+MathlibDemo.lean:316:0
+'AlephOneAlgebraicity.fixedPoints_alephOne_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+MathlibDemo.lean:315:0
+"4.34.0-rc2"
+MathlibDemo.lean:305:0
+AlephOneAlgebraicity.fixedPoint_eq_union_compacts.{u} {S : Type u} {f : Set S → Set S} (hf : ScottContinuous f)
+  (A : AlephOneAlgebraicity.FixedPoints f) : ↑A = ⋃ K, ↑↑K
+MathlibDemo.lean:304:0
+AlephOneAlgebraicity.fixedPoints_alephOne_algebraic.{u} {S : Type u} {f : Set S → Set S} (hf : ScottContinuous f)
+  (A : AlephOneAlgebraicity.FixedPoints f) : IsLUB {K | K ≤ A ∧ AlephOneAlgebraicity.AlephOneCompact K} A
+MathlibDemo.lean:303:0
+AlephOneAlgebraicity.AlephOneCompact.{u} {P : Type u} [Preorder P] (k : P) : Prop
+MathlibDemo.lean:302:0
+AlephOneAlgebraicity.CountablyDirected.{u} {P : Type u} [Preorder P] (D : Set P) : Prop
+Restart File{
+  matchesFinalFile: true,
+  sha256: '87e8f30c94228024ce5b7ba3b0293210802376d7e8cabc67546ac3b7c54ac30b'
+}
+
