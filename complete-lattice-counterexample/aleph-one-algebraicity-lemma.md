@@ -14,20 +14,20 @@ $$
 
 Consider a Scott continuous $f:\mathcal P(S)\to\mathcal P(S)$. 
 
-Consider $\mathrm{Fix}(f) = {x \subseteq S: f(x) = x}$,
+Consider $\mathrm{Fix}(f) = \lbrace x \subseteq S: f(x) = x \rbrace$,
 $\mathrm{Fix}(f)$ being partially ordered by $\subseteq$ as well.
 
-Then for every $x\in \mathrm{Fix}(f)$, $x=\bigvee\{k\leq x:k\mbox{ is }\aleph_1\mbox{-compact}\}$. 
+Then for every $x\in \mathrm{Fix}(f)$, $x=\bigvee \lbrace k\leq x:k\mbox{ is }\aleph_1\mbox{-compact} \rbrace$. 
 
-{\bf Remark:} There is {\bf no cardinality restriction on $S$} in this Lemma. 
+**Remark:** There is **no cardinality restriction on $S$** in this Lemma. 
 
-{\bf Proof.}
+**Proof.**
 
-{\bf Fact.} Directed joins in $\mathrm{Fix}(f)$ are unions.
+**Fact.** Directed joins in $\mathrm{Fix}(f)$ are unions.
 
 This immediately follows from Scott continuity of $f$:
 For every directed $D \subseteq \mathrm{Fix}(f)$, $\bigcup_{d\in D}d = \bigcup_{d\in D} f(d)$, and $f(\bigcup_{d\in D} d) =  \bigcup_{d\in D}f(d)$,
-therefore $\bigcup_{d\in D}d$ is a fixed point of $f$, therefore $\bigcup_{d\in D}d \in \mathrm{Fix}(f)$.\\
+therefore $\bigcup_{d\in D}d$ is a fixed point of $f$, therefore $\bigcup_{d\in D}d \in \mathrm{Fix}(f)$. 
 
 Now fix $A\in \mathrm{Fix}(f)$ and a token $a\in A \subseteq S$. Scott continuity gives
 
@@ -45,7 +45,7 @@ B_{n+1}=B_n\cup\bigcup_{b\in B_n}u_b,
 B=\bigcup_{n<\omega}B_n.
 $$
 
-Each $B_n$ is finite, so $B$ is countable. ({\bf Note:} countable means either finite or countably infinite.) Every token in $B$ has its chosen witness inside $B$; consequently,
+Each $B_n$ is finite, so $B$ is countable. (**Note:** countable means either finite or countably infinite.) Every token in $B$ has its chosen witness inside $B$; consequently,
 
 $$
 a\in B\subseteq f(B),\qquad B\subseteq A.
@@ -57,7 +57,7 @@ $$
 K=\bigcup_{n<\omega}f^n(B).
 $$
 
-Scott continuity implies $f(K)=K$. Moreover, $K\subseteq A$, and {\bf $K$ is the least fixed point containing $B$}.
+Scott continuity implies $f(K)=K$. Moreover, $K\subseteq A$, and **$K$ is the least fixed point containing $B$**.
 
 To see that $K$ is $\aleph_1$-compact, suppose $D\subseteq \mathrm{Fix}(f)$ is countably directed and
 
@@ -71,11 +71,8 @@ $$
 K\subseteq d.
 $$
 
-Thus every token of $A$ belongs to an $\aleph_1$-compact fixed point below $A$, proving the Lemma.\\
+Thus every token of $A$ belongs to an $\aleph_1$-compact fixed point below $A$, proving the Lemma. 
 
-{\bf Astra gave the following remark:} Notice that {\bf $K$ itself need not be countable}. Its compactness comes from its countable generating set $B$.\\
+**Astra gave the following remark:** Notice that {\bf $K$ itself need not be countable}. Its compactness comes from its countable generating set $B$.\\
 
 The reason why $K$ might not be countable is that $f$ is generally allowed to map a finite or countably infinite subset of $S$ to a subset of $S$ which has higher cardinality.
-
-
-\end{document}
