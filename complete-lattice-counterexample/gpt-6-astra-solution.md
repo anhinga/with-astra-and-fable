@@ -116,7 +116,7 @@ They form a complete Boolean algebra, with joins
 
 $$
 \bigvee_iU_i
-=\mathrm{int}\overline{\, \bigcup_iU_i \,}.
+=\mathrm{int}(\mathrm{cl}(\bigcup_iU_i)).
 $$
 
 These are the standard regular-open operations. [Reference, §2.3](https://arxiv.org/html/2608.00408v1#S2.SS3)
