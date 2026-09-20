@@ -14,3 +14,7 @@ Opus 5 also critiques various stylistic aspect of the proof and its organization
 proof which is reusable and submittable to libraries, it would be a good idea to keep refactoring according to those suggestions:
 
 https://claude.ai/share/92f7446f-1e01-46c6-bf13-ff3a65d99b22
+
+I have now done enough to believe that this part is sufficiently verified (this dialog has been extended, the link now points to a longer investigation).
+
+But, in principle, one can do further clean-up work, if one wants to create a more ideal presentation at some point.
