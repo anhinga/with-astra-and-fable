@@ -15,9 +15,9 @@ https://claude.ai/share/8592e24a-23f1-42e5-bd5c-d2a110eba597
 (The iteration is within that one coordinate over $\omega_1$ instead.) So the choice of basis of topology
 does not matter, one just needs to write things accurately.
 
-But I asked a couple of questions. And it seems that 1) we do use regularity of the ordinal $\omega_1$,
+But I asked Opus 5 a couple of extra questions. And it seems that 1) we do use regularity of the ordinal $\omega_1$,
 but that does depend on countable choice, so the whole proof does depend on this weak form of the
-axiom choice (namely on countable choice). And 2) **it seems that it's not necessary to consider
+axiom choice (namely on countable choice); that's fine, but let's take a note of that. And 2) **it seems that it's not necessary to consider
 regular open sets, this seems to be an unnecessary complication** Opus-5 thinks that the same is
 true for the complete lattice of all open sets of this particular Baire space of weight $\aleph_1$.
 That is super-pleasing if true.
