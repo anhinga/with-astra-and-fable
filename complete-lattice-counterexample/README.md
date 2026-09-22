@@ -40,7 +40,17 @@ Consider a construction from descriptive set theory, namely the Baire space of w
 Consider the complete lattice (actually a complete Boolean algebra) of the regular open sets of $(\omega_1)^{\mathbb N}$.
 
 Establish a **theorem** that this complete lattice is not " $\aleph_1$-algebraic". More strongly, _none of its elements_ except the bottom element (the empty set)
-can be obtained as the exact upper bound of the set of $\aleph_1$-compact elements approximating the element in question.
+is $\aleph_1$-compact.
+
+***
+
+Thinking further and discussing with Claude Opus 5 convinced me that it's enough to consider the complete lattice of open sets of $(\omega_1)^{\mathbb N}$,
+the complication of focusing specifically on regular open sets is unnecessary. For that complete lattice, it is also correct that none of its
+elements except the empty set is $\aleph_1$-compact.
+
+I have started to accumulate the relevant materials here: [non-aleph-one-algebraicity-example](non-aleph-one-algebraicity-example)
+
+***
 
 The combination of this theorem and the lemma above proves that the complete lattice of the regular open sets of $(\omega_1)^{\mathbb N}$
 is a counterexample to the conjecture that every complete lattice is isomorphic to some $\mathrm{Fix}(f)$, where
