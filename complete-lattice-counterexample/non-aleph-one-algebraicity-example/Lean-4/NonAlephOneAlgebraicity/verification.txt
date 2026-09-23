@@ -1,0 +1,15 @@
+Verification date: 2026-09-23
+Compiler: Lean (version 4.23.0, x86_64-unknown-linux-gnu, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87, Release)
+Mathlib commit: 37df177aaa770670452312393d4e84aaad56e7b6
+Source: NonAlephOneAlgebraicity.lean
+Source SHA-256: 38e341be4e1c1cedc6f4b4bfd08d0a58262a8526c2dabec2ada1608f36c0a356
+
+Command: lake build
+Exit status: 0
+
+Captured output:
+ℹ [1001/1002] Built NonAlephOneAlgebraicity (2.7s)
+info: NonAlephOneAlgebraicity.lean:274:0: 'NonAlephOneAlgebraicity.exists_strict_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NonAlephOneAlgebraicity.lean:275:0: 'NonAlephOneAlgebraicity.alephOneCompact_iff_eq_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: NonAlephOneAlgebraicity.lean:276:0: 'NonAlephOneAlgebraicity.not_alephOneAlgebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1002 jobs).
