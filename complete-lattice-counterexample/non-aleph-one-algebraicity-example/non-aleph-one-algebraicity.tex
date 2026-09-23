@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage{amssymb}
+
+\begin{document}
+
+Consider a partially ordered set $P$.
+
+Call a nonempty partially ordered set $D \subseteq P$ {\em countably directed} if every countable subset of $D$ has an upper bound in $D$. 
+
+Call $k \in P$ {\bf $\aleph_1$-compact} if for every countably directed $D \subseteq P$
+
+$$
+k\leq\bigvee D\quad\Longrightarrow\quad
+k\leq d\mbox{ for some }d\in D .
+$$ 
+
+Consider a construction from descriptive set theory, namely the Baire space of weight $\aleph_1$, $(\omega_1)^{\mathbb N}$,
+where each copy of the first uncountable ordinal $\omega_1$ has the discrete topology, and $(\omega_1)^{\mathbb N}$ has the product topology. 
+
+Consider the complete lattice $L$ of all open sets of $(\omega_1)^{\mathbb N}$\\
+
+{\bf Theorem.} All elements of $L$ except for the empty set are not $\aleph_1$-compact.\\
+
+{\bf Proof.}
+
+The proof will rely on {\em countable choice} (a weak version of the axiom of choice). However, when we run Lean verification
+of this fragment, we'll allow to just use the axiom of choice, which might make things easier to verify.
+
+Consider a non-empty open set $U \in L$. We are going to build an uncountable increasing chain of open sets, this chain
+will be countably directed, the union of sets in this chain will be equal to $U$, but all elements of this chain will be
+strict subsets of $U$ (that is, strictly less than $U$ in the complete lattice $L$). That will establish that $U$ is not $\aleph_1$-compact.
+
+One of the bases of this topology is formed by cylinder sets. Think about elements of $(\omega_1)^{\mathbb N}$
+as functions mapping ${\mathbb N}$ to $(\omega_1)$. Each cylinder set is defined by finite $I \subseteq {\mathbb N}$ and by fixed values
+$f_i$ for each $i \in I$, and consist of all functions f: ${\mathbb N} \rightarrow \omega_1$, such that
+for all $i \in I, f(i) = f_i$.
+
+So, for indices outside of $I$, functions in a cylinder set in question take all possible values in $\omega_1$.
+
+Since cylinder sets form a basis of topology, take some cylinder set $V \subseteq U$ defined by $I \subseteq {\mathbb N}$
+and fixed values at those indices. Consider an index $j \not\in I$. Functions from V take all possible values $f(j)$ in $\omega_1$.
+
+Split the cylinder set $V$ into uncountable set of non-intersecting cylinders $V_\xi$, with each $V_\xi$ defined by
+the index set $I \cap \{j\}$ and $f_j = f(j) = \xi$. 
+
+Consider the following uncountable increasing chain. For each $\alpha<\omega_1$ define
+
+$$
+U_\alpha=(U\setminus V)\cup\bigcup_{\xi<\alpha}V_\xi.
+$$
+
+Cylinder sets are not only open, but also closed. To see this, observe that the complement of $V$ is a union of cylinder sets with
+the same index set $I$ and with at least one $f_i$ different from that of $V$, therefore the complement of $V$ is open. From that it is
+easy to see that each $U_\alpha$ is open.
+
+Each $U_\alpha$ is strictly smaller than $U$, since it misses $V_\alpha$.
+
+Similarly, this increasing chain is monotonically strictly increasing: $\alpha < \beta$ implies $U_\alpha$ being a strict subset of $U_\beta$.
+
+{\em Countable choice} implies that every countable collection of ordinals below $\omega_1$ has an upper bound below $\omega_1$ (and, in fact,
+implies the uncountability of $\omega_1$). The technical name for this property is that  $\omega_1$ is a {\em regular ordinal}, and this implication
+is well known.
+
+This, in turn, implies that a countable collection of various $U_{\alpha_k}$ has an upper bound $U_\alpha$, where $\alpha$ 
+is an upper bound of the countable collection $\alpha_k$ in $\omega_1$. Therefore, the collection of $U_\alpha$.
+
+So, starting with an arbitrary non-empty open set $U \in L$, we obtain an uncountable increasing chain of open sets $U_\alpha$, this chain
+is countably directed, the union of sets in this chain is equal to $U$, but all elements of this chain are
+strict subsets of $U$ (that is, strictly less than $U$ in the complete lattice $L$). That establishes that $U$ is not $\aleph_1$-compact.
+
+{\bf QED}\\
+
+{\bf Corollary.} $L$ is not $\aleph_1$-algebraic.\\
+
+The corollary is easy to establish. Since only the empty set is $\aleph_1$-compact, it is the only element which can be
+obtained as exact upper bound of $\aleph_1$-compact sets, all other elements of $L$ cannot be obtained in this fashion.
+
+\end{document}
