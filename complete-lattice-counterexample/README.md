@@ -8,9 +8,9 @@ I'd like to start with documenting the tentative counterexample itself.
 
 ***
 
-**Headline theorem** (due to GPT-6-Astra, with mild improvement from myself assisted by other AIs):
+**HEADLINE THEOREM** (due to GPT-6-Astra, with mild improvement from myself assisted by other AIs):
 
-The lattice of open sets of the Baire space of weight $\aleph_1$, $(\omega_1)^{\mathbb N}$,
+The lattice of open sets of $(\omega_1)^{\mathbb N}$ (the Baire space of weight $\aleph_1$)
 cannot be obtained as the set of fixed points of a Scott continuous transformation of a powerset.
 
 ***
