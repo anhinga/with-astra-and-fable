@@ -6,6 +6,15 @@ It's time to start documenting all these: the road to the solution, the upcoming
 
 I'd like to start with documenting the tentative counterexample itself.
 
+***
+
+**Headline theorem** (due to GPT-6-Astra, with mild improvement from myself assisted by other AIs):
+
+The lattice of open sets of the Baire space of weight $\aleph_1$, $(\omega_1)^{\mathbb N}$,
+cannot be obtained as the set of fixed points of a Scott continuous transformation of a powerset.
+
+***
+
 [gpt-6-astra-solution.md](gpt-6-astra-solution.md) - the original solution by GPT-6 Astra (a bit less than 10 min of thinking, ChatGPT Plus web interface, Max thinking setting)
 
 The essence of the solution is as follows. Recall relatively little known (new to me) definitions of a _countably directed set_ and an $\aleph_1$-_compact element_ 
