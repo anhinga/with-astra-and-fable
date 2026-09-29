@@ -35,7 +35,11 @@ regular open sets, this seems to be an unnecessary complication** Opus-5 thinks 
 true for the complete lattice of all open sets of this particular Baire space of weight $\aleph_1$.
 That is super-pleasing if true.
 
+Final draft notes from that conversation made by Opus 5: [opus-5-draft-on-baire-space-weight-aleph1-v3.pdf](opus-5-draft-on-baire-space-weight-aleph1-v3.pdf)
+
+***
 
 The next step is that I am going to create a write-up I am fully comfortable with, and then
 I'll try to ask GPT-6 Astra to create a Lean 4 proof for this part as well.
 
+That's done now. The next step is to double-check that Lean proof.
