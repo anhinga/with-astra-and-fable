@@ -1,3 +1,5 @@
+# Not all complete lattices can be represented as sets of fixed points of Scott continuous transformations of powersets
+
 ### A refutation of the conjecture that all complete lattices can be represented as sets of fixed points of Scott continuous transformations of powersets
 
 On Sunday, September 6, 2006, GPT-6-Astra has produced what seems to be a refutation of the conjecture that 
