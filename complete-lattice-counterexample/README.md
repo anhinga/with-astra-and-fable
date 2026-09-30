@@ -64,3 +64,5 @@ I have started to accumulate the relevant materials here: [non-aleph-one-algebra
 The combination of this theorem and the lemma above proves that the complete lattice of the regular open sets of $(\omega_1)^{\mathbb N}$
 is a counterexample to the conjecture that every complete lattice is isomorphic to some $\mathrm{Fix}(f)$, where
 $f:\mathcal P(S)\to\mathcal P(S)$ is Scott continuous and $\mathcal P(S)$ is the powerset of some set $S$.
+
+And the complete lattice of all open sets of that space is also a counterexample.
