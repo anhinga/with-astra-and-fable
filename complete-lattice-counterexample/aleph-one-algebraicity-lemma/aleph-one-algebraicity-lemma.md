@@ -73,6 +73,6 @@ $$
 
 Thus every token of $A$ belongs to an $\aleph_1$-compact fixed point below $A$, proving the Lemma. 
 
-**Astra gave the following remark:** Notice that {\bf $K$ itself need not be countable}. Its compactness comes from its countable generating set $B$.\\
+**Astra gave the following remark:** Notice that **$K$ itself need not be countable**. Its compactness comes from its countable generating set $B$. 
 
 The reason why $K$ might not be countable is that $f$ is generally allowed to map a finite or countably infinite subset of $S$ to a subset of $S$ which has higher cardinality.
