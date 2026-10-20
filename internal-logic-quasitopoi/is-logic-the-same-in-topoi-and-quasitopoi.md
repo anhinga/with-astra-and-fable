@@ -32,19 +32,19 @@ $$
 
 This principle holds in every topos but can fail in a quasitopos. It is much weaker than the usual axiom of choice: the output is already uniquely specified, so there is no choice among competing witnesses. Nevertheless, turning that specification into a morphism is additional structure. [https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/effectiveness-and-continuity-in-intuitionistic-quasitoposes-of-assemblies/C8A43E59CD4FD8B4C51E3675E74BC44D](https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/effectiveness-and-continuity-in-intuitionistic-quasitoposes-of-assemblies/C8A43E59CD4FD8B4C51E3675E74BC44D)
 
-**A concrete example makes this surprisingly tangible.** Consider the category of sets equipped with a reflexive binary relation, with relation-preserving functions as morphisms. This is a quasitopos. Its strong subobjects are subsets equipped with the induced relation. The category is discussed in Schröder’s paper, §1.3. genui{"citation":{"ref":"turn4view0"}}
+**A concrete example makes this surprisingly tangible.** Consider the category of sets equipped with a reflexive binary relation, with relation-preserving functions as morphisms. This is a quasitopos. Its strong subobjects are subsets equipped with the induced relation. The category is discussed in Schröder’s paper, §1.3. [https://lmcs.episciences.org/1166/pdf](https://lmcs.episciences.org/1166/pdf)
 
 Here is a two-element example within that category. Take
 
 $$
-A=(\{0,1\},\text{every pair is related}),\qquad
-B=(\{0,1\},\text{only equal elements are related}).
+A=(\\{0,1\\},\text{every pair is related}),\qquad
+B=(\\{0,1\\},\text{only equal elements are related}).
 $$
 
 Define the predicate $R$ on $A\times B$ by the subset
 
 $$
-R=\{(0,0),(1,1)\},
+R=\\{(0,0),(1,1)\\},
 $$
 
 equipped with its induced relation.
