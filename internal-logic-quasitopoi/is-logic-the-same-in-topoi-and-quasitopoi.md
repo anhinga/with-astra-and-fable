@@ -52,7 +52,7 @@ equipped with its induced relation.
 Every element of $A$ has exactly one corresponding element of $B$, so internally
 
 $$
-\forall x:A\;\exists!y:B\;R(x,y)
+\forall x:A \exists!y:B R(x,y)
 $$
 
 holds. But the required function would send $0\mapsto0$ and $1\mapsto1$, which **does not preserve the relations**: $0$ and $1$ are related in $A$, while their images are unrelated in $B$. Indeed, every morphism $A\to B$ must be constant. Thus this functional relation has no corresponding morphism.
@@ -60,11 +60,11 @@ holds. But the required function would send $0\mapsto0$ and $1\mapsto1$, which *
 Categorically, the obstruction is easy to locate. For a total, single-valued relation $R\hookrightarrow A\times B$, the projection $R\to A$ is both epic and monic. In a topos, it is therefore invertible, giving the desired map
 
 $$
-A\xrightarrow{\;\pi_A^{-1}\;}R\xrightarrow{\;\pi_B\;}B.
+A\xrightarrow{ \pi_A^{-1} }R\xrightarrow{ \pi_B }B.
 $$
 
 A quasitopos can have morphisms that are both epic and monic without being invertible; the projection in this example is one.
 
 An additional observation from this example: its strong-subobject lattices are ordinary powersets, hence **Boolean**. So even classical predicate logic can coexist with this failure of unique choice.
 
-There is also a terminology caveat: quasitopoi have a first-order internal logic using **all** subobjects. The comparison above uses their customary higher-order logic based on **strong** subobjects; specifying which interpretation is intended matters. Schröder explicitly distinguishes these in Remark 1.2. genui{"citation":{"ref":"turn3view0"}}
+There is also a terminology caveat: quasitopoi have a first-order internal logic using **all** subobjects. The comparison above uses their customary higher-order logic based on **strong** subobjects; specifying which interpretation is intended matters. Schröder explicitly distinguishes these in Remark 1.2. [https://lmcs.episciences.org/1166/pdf](https://lmcs.episciences.org/1166/pdf)
