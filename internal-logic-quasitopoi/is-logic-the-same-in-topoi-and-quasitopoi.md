@@ -25,12 +25,12 @@ In a quasitopos, strong subobjects coincide with regular subobjects—those repr
 To see the logical difference explicitly, consider
 
 $$
-\bigl(\forall x:A\;\exists!y:B\;R(x,y)\bigr)
-\;\Longrightarrow\;
-\exists f:B^A\;\forall x:A\;R(x,f(x)).
+\bigl(\forall x:A \exists!y:B R(x,y)\bigr)
+ \Longrightarrow 
+\exists f:B^A \forall x:A R(x,f(x)).
 $$
 
-This principle holds in every topos but can fail in a quasitopos. It is much weaker than the usual axiom of choice: the output is already uniquely specified, so there is no choice among competing witnesses. Nevertheless, turning that specification into a morphism is additional structure. genui{"citation":{"ref":"turn3view1"}}
+This principle holds in every topos but can fail in a quasitopos. It is much weaker than the usual axiom of choice: the output is already uniquely specified, so there is no choice among competing witnesses. Nevertheless, turning that specification into a morphism is additional structure. [https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/effectiveness-and-continuity-in-intuitionistic-quasitoposes-of-assemblies/C8A43E59CD4FD8B4C51E3675E74BC44D](https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/effectiveness-and-continuity-in-intuitionistic-quasitoposes-of-assemblies/C8A43E59CD4FD8B4C51E3675E74BC44D)
 
 **A concrete example makes this surprisingly tangible.** Consider the category of sets equipped with a reflexive binary relation, with relation-preserving functions as morphisms. This is a quasitopos. Its strong subobjects are subsets equipped with the induced relation. The category is discussed in Schröder’s paper, §1.3. genui{"citation":{"ref":"turn4view0"}}
 
