@@ -14,4 +14,8 @@ But on Sunday, September 6, 2006, GPT-6-Astra has produced what seems to be a so
 
 ***
 
+[complete-lattice-counterexample-2](complete-lattice-counterexample-2) - now with countably based Scott topology (Fable 5.2; Nov 15, 2026)
+
+***
+
 [internal-logic-quasitopoi](internal-logic-quasitopoi) - differences between internal logic for topoi and for quasitopoi
